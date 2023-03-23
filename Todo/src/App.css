@@ -1,0 +1,139 @@
+.App {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  flex-flow: column;
+}
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+body {
+  margin: 0;
+}
+form {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-self: center;
+  box-sizing: border-box;
+}
+input {
+  margin: 1rem 0;
+  height: 30px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+button {
+  padding: 0.25rem 1rem;
+  margin-left: 4px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+button.ADD {
+  padding: 0.25rem 1rem;
+  margin-left: 4px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: rgba(98, 80, 80, 0.406);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px 10px 10px 0px;
+  text-align: center;
+}
+.textContainer{
+  max-width: 170px;
+  word-wrap:break-word;
+}
+.textContainer h4{
+  font-size:small ;
+  font-weight: 600;
+}
+.TaskCard {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1rem;
+}
+.TaskContainer {
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TaskDetails {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Settings {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  align-items: center;
+}
+
+.message-alert {
+  padding: 0.25rem 1rem;
+  font-weight: bolder;
+  border-radius: 15px;
+  animation: messageAlert 2000ms ease-in-out both infinite;
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+}
+p {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+p .icon {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes messageAlert {
+  0% {
+    background-color: rgba(137, 87, 87, 0.312);
+  }
+  25% {
+    background-color: rgba(127, 127, 21, 0.398);
+  }
+  50% {
+    background-color: rgba(0, 255, 106, 0.243);
+  }
+  100% {
+    background-color: rgba(0, 128, 0, 0.257);
+  }
+}
