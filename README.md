@@ -1,5 +1,4 @@
 # TODO
  
-* CRUD Operation
+* CRUD Operations
  
-* FireBase
